@@ -4,21 +4,11 @@ katz_deli = []
 def line(katz_deli)
 if katz_deli.length == 0
 puts "The line is currently empty."
-
-elsif katz_deli.length  > 0 
-counter = 1
-
-puts "The line is currently: 
+else
+puts "The line is currently: 1. #{katz_deli[0]} 2. #{katz_deli[1]} 3. #{katz_deli[2]}
 
 
-brothers = ["Tim", "Tom", "Jim"]
-counter = 1
-brothers.each do |brother|
-  puts "This is loop number #{counter}"
-  puts "Stop hitting yourself #{brother}!"
-  counter += 1
-end
-
+p
 
 
 
