@@ -8,7 +8,7 @@ def line(katz_deli)
 	  current =  "The line is currently:"
 	  katz_deli.each_with_index do |name, index|
       current.concat " #{index+1}. #{name}"
-		puts "The line is currently: 1. #{katz_deli[0]} 2. #{katz_deli[1]} 3. #{katz_deli[2]}"
+		puts current
 	end
 end
 
