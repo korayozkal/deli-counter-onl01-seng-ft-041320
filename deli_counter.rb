@@ -3,14 +3,13 @@ katz_deli = []
 def line(katz_deli)  
   if katz_deli.empty? 
     puts "The line is currently empty."
-  else
-    puts "The line is currently: 1. #{katz_deli[0]} 2. #{katz_deli[1]} 3. #{katz_deli[2]}" 
+  
     else
-    line_method_array.each.with_index(0) do |name, index|
-      line_method_array.push("#{index}. #{name}")
+    line(katz_deli)(0) do |name, index|
+      line(katz_deli).push("#{index}. #{name}")
       # push method will push the name into the index 
     end
-    puts "The line is: #{line_method_array.join(" ")}"
+    puts "The line is: #{line(katz_deli).join(" ")}"
   end
 end
     
